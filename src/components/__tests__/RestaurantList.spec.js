@@ -51,7 +51,7 @@ describe('RestaurantList', () => {
 
   describe('when loading failed', () => {
     it('display the error message', () => {
-      renderWithProps({loadingError: true});
+      renderWithProps({loadError: true});
       const {queryByText} = context;
       expect(queryByText('Restaurant could not be loaded')).not.toBeNull();
     });
