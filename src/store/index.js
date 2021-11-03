@@ -1,9 +1,10 @@
-import {createStore, applyMiddleware, compose} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import rootReducer from './reducers';
+import api from '../api';
 
-const middlewares = [thunk];
+const middlewares = [thunk.withExtraArgument(api)];
 
 const store = createStore(
   rootReducer,
