@@ -19,4 +19,3 @@ describe('Listing Restaurants', () => {
     cy.contains(pizzaPlace);
   });
 });
-w;
