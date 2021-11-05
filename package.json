@@ -45,11 +45,13 @@
     ]
   },
   "devDependencies": {
+    "@material-ui/styles": "^4.11.4",
     "cypress": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-jest": "^24.7.0",
     "eslint-plugin-prettier": "^3.4.1",
+    "flush-promises": "^1.0.2",
     "prettier": "^2.4.1"
   }
 }
