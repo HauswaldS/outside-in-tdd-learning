@@ -7,13 +7,13 @@ describe('Creating a Restaurant', () => {
 
     cy.route({
       method: 'GET',
-      url: 'https://outside-in-dev-api.herokuapp.com/YOUR-API-KEY/restaurants',
+      url: 'https://outside-in-dev-api.herokuapp.com/HRDWZUopJaAeNM0ljhrSLUPg6J6qrhm8/restaurants',
       response: [],
     });
 
     cy.route({
       method: 'POST',
-      url: 'https://outside-in-dev-api.herokuapp.com/YOUR-API-KEY/restaurants',
+      url: 'https://outside-in-dev-api.herokuapp.com/HRDWZUopJaAeNM0ljhrSLUPg6J6qrhm8/restaurants',
       response: {
         id: restaurantId,
         name: restaurantName,
